@@ -28,7 +28,7 @@
             alert(`你输入的用户名是：${username},密码是：${password}`)
         }
 
-        saveFromData = (datatype) => {
+        saveFormData = (datatype) => {
             return (event) => {
                 this.setState({[datatype]: event.target.value});
             }
@@ -38,10 +38,10 @@
             return (
                 <form onSubmit={this.handleSubmit}>
                     <label>
-                        用户名：<input type="text" name="username" onChange={this.saveFromData('username')}/>
+                        用户名：<input type="text" name="username" onChange={this.saveFormData('username')}/>
                     </label>
                     <label>
-                        密码：<input type="password" name="password" onChange={this.saveFromData('password')}/>
+                        密码：<input type="password" name="password" onChange={this.saveFormData('password')}/>
                     </label>
                     <button>登录</button>
                 </form>
