@@ -1,0 +1,23 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React family bucket:steam_locomotive:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrazyCatZhang/React.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrazyCatZhang/React/issues"
+  },
+  "homepage": "https://github.com/CrazyCatZhang/React#readme",
+  "dependencies": {
+    "create-react-app": "^5.0.1"
+  }
+}
