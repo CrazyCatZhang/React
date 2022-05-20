@@ -19,7 +19,8 @@ class Footer extends Component {
         return (
             <div className="todo-footer">
                 <label>
-                    <input type="checkbox" checked={doneCounts === totalCounts && totalCounts !== 0} onChange={this.handleCheckAll}/>
+                    <input type="checkbox" checked={doneCounts === totalCounts && totalCounts !== 0}
+                           onChange={this.handleCheckAll}/>
                 </label>
                 <span>
                     <span>已完成{doneCounts}</span> / 全部{totalCounts}

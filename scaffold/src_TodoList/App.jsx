@@ -61,7 +61,8 @@ class App extends Component {
                 <div className="todo-wrap">
                     <Header addToDo={this.addToDo}/>
                     <List todos={todos} updateToDo={this.updateToDo} deleteToDo={this.deleteToDo}/>
-                    <Footer todos={todos} checkAllTodos={this.checkAllTodos} deleteAllCompleteTodos={this.deleteAllCompleteTodos}/>
+                    <Footer todos={todos} checkAllTodos={this.checkAllTodos}
+                            deleteAllCompleteTodos={this.deleteAllCompleteTodos}/>
                 </div>
             </div>
         );
