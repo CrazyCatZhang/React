@@ -36,8 +36,8 @@ if ("development" !== 'production') {
  * @param {object} typeSpecs Map of name to a ReactPropType
  * @param {object} values Runtime values that need to be type-checked
  * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the components for error messages.
- * @param {?Function} getStack Returns the components stack.
+ * @param {string} componentName Name of the pages for error messages.
+ * @param {?Function} getStack Returns the pages stack.
  * @private
  */
 function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
@@ -234,7 +234,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
   /**
    * Collection of methods that allow declaration and validation of props that are
-   * supplied to React components. Example usage:
+   * supplied to React pages. Example usage:
    *
    *   var Props = require('ReactPropTypes');
    *   var MyArticle = React.createClass({
@@ -419,7 +419,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
   function createArrayOfTypeChecker(typeChecker) {
     function validate(props, propName, componentName, location, propFullName) {
       if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of components `' + componentName + '` has invalid PropType notation inside arrayOf.');
+        return new PropTypeError('Property `' + propFullName + '` of pages `' + componentName + '` has invalid PropType notation inside arrayOf.');
       }
       var propValue = props[propName];
       if (!Array.isArray(propValue)) {
@@ -511,7 +511,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
   function createObjectOfTypeChecker(typeChecker) {
     function validate(props, propName, componentName, location, propFullName) {
       if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of components `' + componentName + '` has invalid PropType notation inside objectOf.');
+        return new PropTypeError('Property `' + propFullName + '` of pages `' + componentName + '` has invalid PropType notation inside objectOf.');
       }
       var propValue = props[propName];
       var propType = getPropType(propValue);
