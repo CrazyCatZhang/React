@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link,Route} from 'react-router-dom'
+import {Link, Route} from 'react-router-dom'
 import Detail from './Detail'
 
 class Message extends Component {
@@ -27,7 +27,10 @@ class Message extends Component {
                                     {/*<Link to={`/home/message/detail/?id=${messageObj.id}&title=${messageObj.title}`}>{messageObj.title}</Link>*/}
 
                                     {/*传递state参数*/}
-                                    <Link to={{pathname:'/home/message/detail',state:{id:messageObj.id,title:messageObj.title}}}>{messageObj.title}</Link>
+                                    <Link replace={true} to={{
+                                        pathname: '/home/message/detail',
+                                        state: {id: messageObj.id, title: messageObj.title}
+                                    }}>{messageObj.title}</Link>
                                 </li>
                             )
                         })
