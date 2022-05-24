@@ -1,5 +1,5 @@
 import React from 'react';
-import {root} from "../../index";
+import ReactDOM from "react-dom/client";
 
 function Hooks() {
 
@@ -19,7 +19,7 @@ function Hooks() {
     }
 
     function unmount() {
-        root.unmount()
+        ReactDOM.createRoot(document.getElementById('hooks')).unmount()
     }
 
     return (
