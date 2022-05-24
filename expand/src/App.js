@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import SetState from "./components/SetState";
 import LazyLoad from "./components/LazyLoad";
+import Hooks from "./components/Hooks";
 
 class App extends Component {
     render() {
@@ -9,6 +10,8 @@ class App extends Component {
                 <SetState/>
                 <hr/>
                 <LazyLoad/>
+                <hr/>
+                <Hooks/>
             </div>
         );
     }
