@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import Optimize from "./components/Optimize";
+import RenderProps from "./components/RenderProps";
 
 class App extends Component {
     render() {
         return (
             <div>
-                <Optimize/>
+                <RenderProps/>
             </div>
         );
     }
