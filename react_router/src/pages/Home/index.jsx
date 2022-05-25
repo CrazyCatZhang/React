@@ -1,6 +1,5 @@
 import React from 'react';
 import {NavLink, Outlet} from "react-router-dom";
-import routes from "../../routes";
 
 function Home() {
     return (

@@ -5,7 +5,7 @@ import News from "../pages/Home/News";
 import Message from "../pages/Home/Message";
 import Detail from "../pages/Home/Message/Detail";
 
-export default [
+const routes = [
     {
         path: '/about',
         element: <About/>
@@ -35,3 +35,5 @@ export default [
         element: <Navigate to='/about'/>
     }
 ]
+
+export default routes
